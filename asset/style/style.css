@@ -1,0 +1,264 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aliceblue;
+}
+/* Header */
+
+header{
+    background-color: #334257;
+    height: 100px;
+    display: flex;
+    box-shadow: 0px 22px 24px -3px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+header h1{
+    color: rgb(189, 189, 189);
+    font-size: 2em;
+    min-width: 350px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    padding: 20px;
+    flex-basis: 70%;
+}
+
+header nav{
+    background-color: #476072;
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+header nav a{
+    text-align: center;
+    flex-basis: 25%;
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    padding: 40px;
+}
+
+header nav a:hover{
+    background-color: #98aec42d
+}
+
+/* Main */
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+/* Content pembuka */
+.content-pembuka{
+    flex-basis: 800px;
+    width: 100%;
+    display: flex;
+}
+
+.left-f{
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.left-f h1{
+    font-size: 6em;
+    margin-bottom: 20px;
+}
+
+.left-f p{
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+.right-f{
+    flex-basis: 50%;
+}
+
+.right-f figure{
+    text-align: center;
+}
+
+.right-f figure img{
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+/*  Content utama */
+main .content{
+    display: flex;
+    flex-direction: column;
+}
+
+main .content article{
+    flex-basis: 900px;
+    border-radius: 8px;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+article h2{
+    font-size: 3em;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
+
+article p{
+    font-size: 1.15em;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.featured-img {
+    padding-top: 10px;
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.section-ctrl{
+    margin-top: 50px;
+}
+.section-ctrl h3{
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* profile */
+
+.profile{
+    width: 100%;
+    display: flex;
+    flex-basis: 800px;
+}
+
+.left-p{
+    flex-basis: 50%;
+    align-self: center;
+}
+
+.left-p h1{
+    border-bottom: 1px solid;
+    font-size: 10em;
+}
+
+.left-p ul{
+    margin-top: 20px;
+}
+
+.left-p li{
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.left-p button{
+    margin-top: 20px;
+    height: 35px;
+    width: 175px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.right-p{
+    flex-basis: 50%;
+    text-align: center;
+    align-self: center;
+}
+
+
+.right-p img{
+    border-radius: 5px;
+    width: 350px;
+    height: 750px;
+    max-height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+
+footer{
+    background-color: #334257;
+    color: rgb(189, 189, 189);
+    height: 75px;
+    text-align: center;
+    padding: 25px;
+}
+
+
+@media screen and (max-width: 1284px){
+    header{
+        height: 75px;
+    }
+    header h1{
+        display: none;
+    }
+    header nav{
+        flex-basis: 100%;
+    }
+
+    .content-pembuka{
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    
+    .left-f h1{
+        font-size: 4em;
+        padding-bottom: 10px;
+    }
+    .left-f{
+        padding-bottom: 30px;
+    }
+
+    .profile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-p h1{
+        font-size: 2em;
+    }
+}
+
+/* Mobile L*/
+@media screen and (max-width: 425px) {
+    header nav a{
+        flex-basis: 25%;
+    }
+    .content-pembuka{
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+
+    .left-f h1{
+        font-size: 2.5em;
+        padding-bottom: 10px;
+    }
+
+    .left-p li{
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+
+    .right-f img{
+        width: 250px;
+        height: 350px;
+    }
+ }
